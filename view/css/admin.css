@@ -1,0 +1,220 @@
+#subsubmenu li {
+   display: inline;
+   line-height: 170%;
+   list-style: none;
+   text-align: center;
+}
+
+#subsubmenu {
+   font-size: 0.9em;
+   background: #f1f1f1;
+   border-bottom: none;
+   margin: 0;
+   color: #21759b;
+   padding: 2px 2em 0 5em;
+}
+
+#subsubmenu .current {
+   background: #f9f9f9;
+   color: #333333;
+   font-weight: bold;
+}
+
+#subsubmenu a {
+   border: none;
+   color: #21759b;
+   font-size: 12px;
+   padding: 3px 1em 2px 1em;
+   text-decoration: none;
+}
+
+#subsubmenu a:hover {
+   background: #f9f9f9;
+   color: #21759b;
+}
+
+#subsubmenu li {
+   line-height: 150%;
+}
+
+.pad-right td {
+   padding-right: 15px;
+}
+
+.clsTableLeft{
+   width: 220px;
+   font-weight: bold;
+   text-align: right;
+   padding-right: 15px;
+}
+
+.clsBig {
+   width: 70%;
+}
+
+.clsSmall {
+   width: 100px;
+}
+
+.cmdButton {
+   float: left;
+   margin-left: 157px;
+   margin-top: 10px;
+}
+
+.cmdButton input {
+   width: 120px;
+   line-height: 2em;
+}
+
+ul.clsFPTList {
+   margin-top: 5px;
+   margin-right: 20px;
+   list-style-type: none;
+}
+
+ul.clsFPTList li {
+   padding: 4px;
+}
+
+.testimonial-header {
+   margin-top: 10px;
+   margin-right: 20px;
+}
+
+.testimonial-table {
+   width: 100%;
+}
+
+.testimonial-table td {
+   text-align: center;
+}
+
+.testimonial-table td.testimonial-title {
+   text-align: left;
+}
+
+.testimonial-table td img.testimonial-delete {
+   cursor: pointer;
+}
+
+.testimonial-table td span {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.wait {
+   background-color: #f9f9f9;
+   border: 1px solid #7f7f7f;
+}
+
+.approved {
+   /*background-color: #b0b1b3;*/
+   background-color: #E5E5E5;
+}
+
+.deleted {
+   /*background-color: #d4b1b4;*/
+   background-color: #f9f9f9;
+   border: 1px solid #960000;
+}
+
+.clsThumbHead {
+   margin-left: 45px;
+   display: inline;
+   font-weight: bold;
+}
+
+.clsTitleHead {
+   margin-left: 20px;
+   font-weight: bold;
+}
+
+.clsDeleteHead {
+   margin-right: 30px;
+   font-weight: bold;
+}
+
+.clsButtons {
+   margin-left: 40px;
+}
+
+.edit-testimonial {
+   margin-right: 20px;
+   margin-bottom: 10px;
+   width: 95%;
+}
+
+.edit-testimonial tr td textarea {
+   width: 100%;
+}
+
+.fpt-hidden {
+   display: none;
+}
+
+.fpt-table {
+   width: 95%;
+}
+
+.fpt-table input, .fpt-table textarea {
+   width: 100%;
+}
+
+.fpt-table input.button {
+   width: 120px;
+}
+
+ul#catList {
+   list-style-type: none;
+}
+
+ul#catList div {
+   padding: 5px;
+}
+
+ul#catList img {
+   cursor: pointer;
+}
+
+ul#catList li {
+   margin-top: 0px;
+   padding-top: 0px;
+}
+
+ul#catList ul {
+   margin-left: 20px;
+   margin-top: 5px;
+   padding-top: 0px;
+}
+
+.inline {
+   display: inline;
+}
+
+div.fpt-maintanance {
+   width: 95%;
+   border: 1px solid #A0A0A0;
+   margin: 5px;
+   padding: 5px;
+}
+
+div.fpt-maintanance input.button {
+   width: 80px;
+}
+
+ul.fpt-templates {
+   margin: 20px;
+   font-size: 15px;
+}
+
+ul.fpt-templates li {
+   line-height: 2em;
+   background-color: #E5E5E5;
+   padding-left: 10px;
+}
+
+ul.fpt-templates li span {
+   cursor: pointer;
+   padding-left: 10px;
+}
