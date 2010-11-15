@@ -10,7 +10,7 @@ FV Testimonials brings you easy management of your testimonials.
 
 == Description ==
 
-FV Wordpress Flowplayer plugin is a free, easy-to-use, and complete solution for embedding FLV or MP4 videos into your posts or pages. 
+FV Testimonials brings you easy management of your testimonials.
 
 * Easy to use and configured straight out of the box
 * Takes extensive care on testimonials images, resizes them to correct user-defined size
