@@ -4,7 +4,7 @@ Donate link: http://foliovision.com/donate/
 Tags: testimonials
 Requires at least: 2.2
 Tested up to: 3.0.1
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 
 FV Testimonials brings you easy management of your testimonials.
 
@@ -34,6 +34,9 @@ FV Testimonials brings you easy management of your testimonials.
 1. FV Testimonials management
 
 == Changelog ==
+
+= 0.9.5 =
+* Fixed problems if no image directory was set
 
 = 0.9.4 =
 * Published in Wordpress repository

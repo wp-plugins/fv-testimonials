@@ -212,6 +212,7 @@ class FPTImage {
       if( !$bEcho ) ob_start();
 
       $strPath = $objFPTMain->strImageRoot . $this->strPath;
+      $strPath = str_replace('//','/',$strPath);
       $objImage = $this;
       include( FP_TESTIMONAL_ROOT . 'view/user/image.php' );
 
@@ -227,7 +228,7 @@ class FPTImage {
 
       if( !$strSize || $strSize == $this->strSize ) $strPath = $objFPTMain->strImageRoot.$this->strPath;
       else $strPath = $objFPTMain->strImageRoot . str_replace( '/'.$this->strSize.'/', '/'.$strSize.'/', $this->strPath );
-
+      $strPath = str_replace('//','/',$strPath);
       return ($this->strPath) ? $strPath : false;
    }
 

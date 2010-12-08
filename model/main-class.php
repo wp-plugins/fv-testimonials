@@ -221,7 +221,7 @@ class FPTMain {
             $this->strMessage = '<p>'.$ex->getMessage().'</p>';
          }
 
-         foreach( $aFolders as $strDir ) $this->DeleteFolder( $strClean.$strDir );
+         if ($aFolders) foreach( $aFolders as $strDir ) $this->DeleteFolder( $strClean.$strDir );
       }
 
       return true;
