@@ -16,7 +16,7 @@ FV Testimonials brings you easy management of your testimonials.
 * Takes extensive care on testimonials images, resizes them to correct user-defined size
 * Easy embedding of testimonials everywhere on site
 * Requires almost no installation (just copy and activate)
-* Doesn't create database overage (1 extra query for every page with testimonials are included)
+* Doesn't create database overage (just a single additional query on a page with testimonials)
 
 
 == Installation ==
