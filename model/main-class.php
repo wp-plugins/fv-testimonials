@@ -77,6 +77,11 @@ class FPTMain {
       if( !$this->iWidthSmall ) $this->iWidthSmall = 150;
       if( !$this->iWidthThumbs ) $this->iWidthThumbs = 50;
 
+      $this->aSizes['large'] = $this->iWidthLarge;
+      $this->aSizes['medium'] = $this->iWidthMedium;
+      $this->aSizes['small'] = $this->iWidthSmall;
+      $this->aSizes['thumbs'] = $this->iWidthThumbs;
+
       if( !$this->strImageRoot ) $this->strImageRoot = '/';
       if( 0 >= $this->iJPGQuality || 100 < $this->iJPGQuality ) $this->iJPGQuality = 90;
    }
@@ -207,8 +212,8 @@ class FPTMain {
 
       $strOldPath = get_option( self::OPTION_IMAGES );
       if( $strOldPath && $strOldPath != $this->strImageRoot ){
-         $strOldPath = $_SERVER['DOCUMENT_ROOT'] . $strOldPath . '/';
-         $strNewPath = $_SERVER['DOCUMENT_ROOT'] . $this->strImageRoot . '/';
+         $strOldPath = str_replace('//','/',$_SERVER['DOCUMENT_ROOT'] . $strOldPath . '/');
+         $strNewPath = str_replace('//','/',$_SERVER['DOCUMENT_ROOT'] . $this->strImageRoot . '/');
 
          try{
             foreach( $this->aAllSizes as $strDir )
