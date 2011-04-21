@@ -18,6 +18,13 @@ FV Testimonials brings you easy management of your testimonials.
 * Requires almost no installation (just copy and activate)
 * Doesn't create database overage (just a single additional query on a page with testimonials)
 
+**[Download now!](http://foliovision.com/seo-tools/wordpress/plugins/fv-testimonials)**
+
+[Support](http://foliovision.com/seo-tools/wordpress/plugins/fv-testimonials) |
+[Installation](http://foliovision.com/seo-tools/wordpress/plugins/fv-testimonials/installation) |
+[Usage](http://foliovision.com/seo-tools/wordpress/plugins/fv-testimonials/user-guide) | 
+[Guide](http://foliovision.com/seo-tools/wordpress/plugins/fv-testimonials/management-guide)
+
 
 == Installation ==
 
