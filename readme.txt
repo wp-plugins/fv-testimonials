@@ -12,7 +12,7 @@ FV Testimonials brings you easy management of your testimonials.
 
 FV Testimonials brings you easy management of your testimonials.
 
-* Easy to use and configured straight out of the box
+* Easy to use and configured straight out of the box 
 * Takes extensive care on testimonials images, resizes them to correct user-defined size
 * Easy embedding of testimonials everywhere on site
 * Requires almost no installation (just copy and activate)
