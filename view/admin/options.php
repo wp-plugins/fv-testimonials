@@ -7,7 +7,7 @@
       <table style="width: 100%;">
          <tr>
             <td class="clsTableLeft">Path to post or page where all testimonials are inserted: </td>
-            <td><input class="clsBig" type="text" name="tboxImageRoot" value="<?php echo $this->strUrl; ?>" /></td>
+            <td><input class="clsBig" type="text" name="tboxTestimonialPage" value="<?php echo $this->strUrl; ?>" /></td>
          </tr>
          <tr>
             <td class="clsTableLeft">Image root folder: </td>

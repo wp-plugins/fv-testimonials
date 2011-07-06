@@ -526,6 +526,8 @@ class FPTMain {
          $this->strMessage .= '<p>'.$ex->getMessage().'</p>';
          return;
       }
+      $this->strUrl = preg_replace( '/\/\//', '/', preg_replace( '/\/$/', '', strval( $_POST['tboxTestimonialPage'] ) ) );
+      if( '/' != $this->strUrl[0] ) $this->strUrl = '/' . $this->strUrl;
 
       $this->strImageRoot = preg_replace( '/\/\//', '/', preg_replace( '/\/$/', '', strval( $_POST['tboxImageRoot'] ) ) );
       if( '/' != $this->strImageRoot[0] ) $this->strImageRoot = '/' . $this->strImageRoot;
@@ -553,6 +555,7 @@ class FPTMain {
       $this->UpdateOption( self::OPTION_SMALL, $this->iWidthSmall );
       $this->UpdateOption( self::OPTION_JPG, $this->iJPGQuality );
       $this->UpdateOption( self::OPTION_CSS, ($this->bOutputCSS) ? 'yes' : 'no' );
+      $this->UpdateOption( self::OPTION_URL, $this->strUrl );
 
       $this->strMessage .= '<p>Options updated !</p>';
    }
