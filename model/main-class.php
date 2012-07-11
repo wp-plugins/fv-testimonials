@@ -9,12 +9,18 @@
 
 require( FP_TESTIMONAL_ROOT . 'model/image-class.php' );
 require( FP_TESTIMONAL_ROOT . 'model/testimonial-class.php' );
+/// Addition  0.9.6 Basic - additional API
+require( FP_TESTIMONAL_ROOT . 'model/fp-api.php' );
+/// End of addition
 
 /**
  * Main class of Foliopress Testimonials plugin. This class handles all the interaction with Wordpress.
  */
-class FPTMain {
-
+/// Addition  0.9.6 Basic - additional API
+// class FPTMain {
+class FPTMain extends FV_Testimonials_Foliopress_Plugin {
+/// End of addition
+    
    public $strUrl = '';
    public $iWidthLarge = 0;
    public $iWidthMedium = 0;
@@ -44,27 +50,36 @@ class FPTMain {
    const OPTION_TEMPLATES = 'FPT_templates';
 
    const OPTION_DATABASE = 'FPT_database';
+   
+   
 
-   public function __construct(){
-      $this->strUrl = strval( get_option( self::OPTION_URL ) );
-      $this->iWidthLarge = intval( get_option( self::OPTION_LARGE ) );
-      $this->iWidthMedium = intval( get_option( self::OPTION_MEDIUM ) );
-      $this->iWidthSmall = intval( get_option( self::OPTION_SMALL ) );
-      $this->strImageRoot = strval( get_option( self::OPTION_IMAGES ) );
-      $this->iJPGQuality = intval( get_option( self::OPTION_JPG ) );
-      $this->bOutputCSS = ('no' == strval( get_option( self::OPTION_CSS ) )) ? false : true;
-      $this->aTemplates = @unserialize( get_option( self::OPTION_TEMPLATES ) );
-      if( !is_array( $this->aTemplates ) ) $this->aTemplates = array();
+   public function __construct() {
+       
+        /// Addition  0.9.6 Basic - additional API
+        $this->readme_URL = 'http://plugins.trac.wordpress.org/browser/fv-testimonials/trunk/readme.txt?format=txt';
+        add_action('in_plugin_update_message-fv-testimonials/fv-testimonials.php', array(&$this, 'plugin_update_message'));
+        /// End of addition
+        
+        $this->strUrl = strval(get_option(self::OPTION_URL));
+        $this->iWidthLarge = intval(get_option(self::OPTION_LARGE));
+        $this->iWidthMedium = intval(get_option(self::OPTION_MEDIUM));
+        $this->iWidthSmall = intval(get_option(self::OPTION_SMALL));
+        $this->strImageRoot = strval(get_option(self::OPTION_IMAGES));
+        $this->iJPGQuality = intval(get_option(self::OPTION_JPG));
+        $this->bOutputCSS = ('no' == strval(get_option(self::OPTION_CSS))) ? false : true;
+        $this->aTemplates = @unserialize(get_option(self::OPTION_TEMPLATES));
+        if (!is_array($this->aTemplates))
+            $this->aTemplates = array();
 
-      $this->strDatabaseVersion = strval( get_option( self::OPTION_DATABASE ) );
+        $this->strDatabaseVersion = strval(get_option(self::OPTION_DATABASE));
 
-      $this->aSizes['large'] = $this->iWidthLarge;
-      $this->aSizes['medium'] = $this->iWidthMedium;
-      $this->aSizes['small'] = $this->iWidthSmall;
-      $this->aSizes['thumbs'] = $this->iWidthThumbs;
+        $this->aSizes['large'] = $this->iWidthLarge;
+        $this->aSizes['medium'] = $this->iWidthMedium;
+        $this->aSizes['small'] = $this->iWidthSmall;
+        $this->aSizes['thumbs'] = $this->iWidthThumbs;
 
-      $this->CheckOptions();
-   }
+        $this->CheckOptions();
+    }
 
    /**
     * Checks if values in public properties are correct, if not, corrects them to default values.
