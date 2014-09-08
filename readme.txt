@@ -2,9 +2,9 @@
 Contributors: FolioVision
 Donate link: http://foliovision.com/donate/
 Tags: testimonials
-Requires at least: 2.2
-Tested up to: 3.0.1
-Stable tag: 0.9.6
+Requires at least: 3.2
+Tested up to: 4.0
+Stable tag: 1.10
 
 FV Testimonials brings you easy management of your testimonials.
 
@@ -36,11 +36,27 @@ FV Testimonials brings you easy management of your testimonials.
    
 == Frequently Asked Questions ==
 
+= How do I insert the testimonials into the page? =
+
+Just use the shortcode [testimonials show="all"] to display all published testimonials. 
+
+For more detailed options for shortcode refer to our manual at http://foliovision.com
+
 == Screenshots ==
 
 1. FV Testimonials management
 
 == Changelog ==
+
+= 1.12.1 =
+* Repaired slug creation for images
+
+= 1.12 =
+* Fixed few performance issues
+
+= 1.0 =
+* Complete rewrite of the code
+* Testimonials now stored as custom post types
 
 = 0.9.5 =
 * Fixed problems if no image directory was set
@@ -50,3 +66,20 @@ FV Testimonials brings you easy management of your testimonials.
 
 = 0.9.6 =
 * Check for Upgrade Notice - a major upgrade will come shortly, database backup is recommended
+
+= 1.0 = 
+* Major upgrade - FV Testimonials is now using custom post type
+ 
+= 1.10 = 
+* Fixed images conversion from 0.9.x version
+* Fixed exclude shortcode conversion from from 0.9.x version
+* Fixed db conversion - old shortcode used in any other db table 
+* Order menu available to editors
+= 1.11
+* Fixed parsing templates
+
+== Upgrade Notice ==
+
+= 1.0 =
+This is major upgrade. Your testimonials will be converted to custom post type. Please backup your wordpress before upgrading. If you have done some tweaking or inserting testimoials into templates you will need to update these codes with shortcodes.
+

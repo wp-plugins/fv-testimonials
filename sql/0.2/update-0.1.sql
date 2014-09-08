@@ -1,1 +1,0 @@
-ALTER TABLE `%prefix%fpt_testimonials` ADD COLUMN `lightbox` ENUM('yes','no') NOT NULL DEFAULT 'no' AFTER `featured`

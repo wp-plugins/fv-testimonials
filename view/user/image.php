@@ -1,1 +1,0 @@
-<img src="<?php echo $strPath; ?>" alt="<?php str_replace( '-', '', $objImage->strName ); ?>" width="<?php echo $objImage->iWidth; ?>" height="<?php echo $objImage->iHeight; ?>" />

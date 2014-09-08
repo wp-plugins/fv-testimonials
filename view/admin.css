@@ -218,3 +218,15 @@ ul.fpt-templates li span {
    cursor: pointer;
    padding-left: 10px;
 }
+
+input.fpt-del-button {
+   font-size: 8px;
+   color: #002C4F !important;
+   background: none;
+   border: 0;
+   padding-left: 0px;
+   cursor: pointer;
+}
+ul.fpt-templates textarea{
+   line-height : 1.4em;  
+}
