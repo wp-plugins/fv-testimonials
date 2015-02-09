@@ -3,7 +3,7 @@ Contributors: FolioVision
 Donate link: http://foliovision.com/donate/
 Tags: testimonials
 Requires at least: 3.2
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 1.10
 
 FV Testimonials brings you easy management of your testimonials.
